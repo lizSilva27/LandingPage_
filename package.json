@@ -1,0 +1,13 @@
+{
+  "name": "landingpage_cide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass assetsWeb/scss/main.scss assetsWeb/css/main.css",
+    "watch:css": "sass --watch assetsWeb/scss/main.scss assetsWeb/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

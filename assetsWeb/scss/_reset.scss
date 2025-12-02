@@ -1,0 +1,75 @@
+@use "variables" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Heredar fuentes en los formularios */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Evitar que imágenes y videos sobrepasen su contenedor */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Quitar decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas sin viñetas ni padding extra */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Eliminar bordes en elementos con foco */
+button,
+input,
+textarea,
+select {
+  border: none;
+  outline: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+/* Asegurar un fondo consistente */
+body {
+  font-family: $FontPrimary;
+  line-height: 1.5;
+  color: $Black;
+  font-size: 14px;
+}
+
+/* Hacer que los botones sean clickeables y accesibles */
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Hacer que los encabezados sean más consistentes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}

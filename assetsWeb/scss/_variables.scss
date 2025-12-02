@@ -1,0 +1,153 @@
+//FontFamily NotoSans
+@font-face {
+  font-family: 'NotoSansMain';
+  src: url('..../fonts/Noto_Sans/NotoSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NotoSansMain';
+  src: url('../fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NotoSansMain';
+  src: url('../fonts/Noto_Sans/NotoSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'NotoSansMain';
+  src: url('../fonts/Noto_Sans/NotoSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'NotoSansMain';
+  src: url('../fonts/Noto_Sans/NotoSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NotoSansMain';
+  src: url('../fonts/Noto_Sans/NotoSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'NotoSansMain';
+  src: url('../fonts/Noto_Sans/NotoSans-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+//FontFamily Montserrat
+@font-face {
+  font-family: 'MontserratSecondary';
+  src: url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'MontserratSecondary';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MontserratSecondary';
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'MontserratSecondary';
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'MontserratSecondary';
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'MontserratSecondary';
+  src: url('../fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'MontserratSecondary';
+  src: url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+//FontFamily OpenSans
+@font-face {
+  font-family: 'OpenSansSecondary2';
+  src: url('../fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'OpenSansSecondary2';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'OpenSansSecondary2';
+  src: url('../fonts/Open_Sans/OpenSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'OpenSansSecondary2';
+  src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'OpenSansSecondary2';
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'OpenSansSecondary2';
+  src: url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'OpenSansSecondary2';
+  src: url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'PatriaBold';
+  src: url('../fonts/Patria/Patria_Bold.otf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'PatriaRegular';
+  src: url('../fonts/Patria/Patria_Regular.otf') format('truetype');
+  font-weight: 900;
+}
+
+//Colores
+$Black: rgb(0, 0, 0);
+$greenCIDE: #163d34;
+$BlueCIDE: rgb(15, 61, 102);
+$BlueDark: #002554;
+$BlueCyan: #01ACFC;
+$Orange: #ED7F2F;
+
+//Tipografía
+$FontPrimary: 'NotoSansMain', 'MontserratSecondary', 'OpenSansSecondary2', 'Sans Serif Collection';
+$FontPatriaBold: 'PatriaBold';
+$FontPatriaRegular: 'PatriaRegular';

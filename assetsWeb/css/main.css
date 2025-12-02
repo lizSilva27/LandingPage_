@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NotoSansMain";
+  src: url("..../fonts/Noto_Sans/NotoSans-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NotoSansMain";
+  src: url("../fonts/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NotoSansMain";
+  src: url("../fonts/Noto_Sans/NotoSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "NotoSansMain";
+  src: url("../fonts/Noto_Sans/NotoSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "NotoSansMain";
+  src: url("../fonts/Noto_Sans/NotoSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotoSansMain";
+  src: url("../fonts/Noto_Sans/NotoSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "NotoSansMain";
+  src: url("../fonts/Noto_Sans/NotoSans-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "MontserratSecondary";
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "MontserratSecondary";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "MontserratSecondary";
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "MontserratSecondary";
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "MontserratSecondary";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "MontserratSecondary";
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "MontserratSecondary";
+  src: url("../fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "OpenSansSecondary2";
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "OpenSansSecondary2";
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "OpenSansSecondary2";
+  src: url("../fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "OpenSansSecondary2";
+  src: url("../fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "OpenSansSecondary2";
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "OpenSansSecondary2";
+  src: url("../fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "OpenSansSecondary2";
+  src: url("../fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "PatriaBold";
+  src: url("../fonts/Patria/Patria_Bold.otf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "PatriaRegular";
+  src: url("../fonts/Patria/Patria_Regular.otf") format("truetype");
+  font-weight: 900;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Heredar fuentes en los formularios */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Evitar que imágenes y videos sobrepasen su contenedor */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Quitar decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas sin viñetas ni padding extra */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Eliminar bordes en elementos con foco */
+button,
+input,
+textarea,
+select {
+  border: none;
+  outline: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+/* Asegurar un fondo consistente */
+body {
+  font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+/* Hacer que los botones sean clickeables y accesibles */
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Hacer que los encabezados sean más consistentes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.headerBanner {
+  position: relative;
+  width: 100%;
+  min-height: 370px;
+  background-image: url("/assetsWeb/images/BannerFondo.png");
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+@media screen and (min-width: 900px) {
+  .headerBanner {
+    background-size: cover;
+    background-position: center center;
+  }
+}
+.headerBanner--img3 {
+  width: 160px;
+}
+.headerBanner__topImg {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+}
+.headerBanner__topImg--img1 {
+  width: 17vw;
+  max-width: 120px;
+  min-width: 75px;
+}
+.headerBanner__topImg--img2 {
+  width: 26vw;
+  max-width: 130px;
+  min-width: 85px;
+}
+.headerBanner__title {
+  font-size: 1rem;
+  font-family: "PatriaBold";
+  text-align: center;
+  font-size: 1.2rem;
+  color: #002554;
+}
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 6rem;
+  font-weight: 700;
+  color: #002554;
+  font-size: 1rem;
+}
+.navContainer__links:hover {
+  color: #ED7F2F;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

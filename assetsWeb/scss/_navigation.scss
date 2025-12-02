@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 6rem;
+  font-weight: 700;
+  color: $BlueDark;
+  font-size: 1rem;
+
+  &__links:hover {
+    color: $Orange;
+    text-decoration: underline;
+  }
+}
