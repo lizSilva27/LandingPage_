@@ -203,14 +203,27 @@ h6 {
   align-items: center;
   gap: 3rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 920px) {
   .headerBanner {
     background-size: cover;
     background-position: center center;
+    padding: 2rem 2.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .headerBanner {
+    padding: 2rem 4.5rem;
   }
 }
 .headerBanner--img3 {
-  width: 160px;
+  width: 60vw;
+  max-width: 250px;
+  min-width: 240px;
+}
+@media screen and (min-width: 1200px) {
+  .headerBanner--img3 {
+    max-width: 320px;
+  }
 }
 .headerBanner__topImg {
   display: flex;
@@ -220,12 +233,12 @@ h6 {
 }
 .headerBanner__topImg--img1 {
   width: 17vw;
-  max-width: 120px;
+  max-width: 130px;
   min-width: 75px;
 }
 .headerBanner__topImg--img2 {
   width: 26vw;
-  max-width: 130px;
+  max-width: 145px;
   min-width: 85px;
 }
 .headerBanner__title {
@@ -234,6 +247,21 @@ h6 {
   text-align: center;
   font-size: 1.2rem;
   color: #002554;
+}
+@media screen and (min-width: 640px) {
+  .headerBanner__title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 920px) {
+  .headerBanner__title {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .headerBanner__title {
+    font-size: 2.2rem;
+  }
 }
 
 .navContainer {
