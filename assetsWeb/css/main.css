@@ -114,6 +114,11 @@
   src: url("../fonts/Patria/Patria_Regular.otf") format("truetype");
   font-weight: 900;
 }
+@font-face {
+  font-family: "Impact";
+  src: url("../fonts/Impact/Impact.ttf") format("truetype");
+  font-weight: 900;
+}
 *,
 *::before,
 *::after {
@@ -168,7 +173,7 @@ body {
   font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
   line-height: 1.5;
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Hacer que los botones sean clickeables y accesibles */
@@ -191,7 +196,7 @@ h6 {
 .headerBanner {
   position: relative;
   width: 100%;
-  min-height: 370px;
+  min-height: 310px;
   background-image: url("/assetsWeb/images/BannerFondo.png");
   background-size: cover;
   background-position: right bottom;
@@ -226,13 +231,13 @@ h6 {
   }
 }
 .headerBanner__topImg {
+  width: 100%;
   display: flex;
-  align-items: start;
-  justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .headerBanner__topImg--img1 {
-  width: 17vw;
+  width: 15vw;
   max-width: 130px;
   min-width: 75px;
 }
@@ -240,6 +245,12 @@ h6 {
   width: 26vw;
   max-width: 145px;
   min-width: 85px;
+}
+@media screen and (max-width: 790px) {
+  .headerBanner__topImg {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
 .headerBanner__title {
   font-size: 1rem;
@@ -263,22 +274,241 @@ h6 {
     font-size: 2.2rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .headerBanner__title {
+    font-size: 2.4rem;
+  }
+}
 
 .navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   width: 100%;
+  padding: 1rem 8rem;
+  font-weight: 700;
+  color: #002554;
+  font-size: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .navContainer {
+    padding: 1rem;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .navContainer {
+    background-color: #002554;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+}
+.navContainer__containerLinks {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   align-items: center;
   justify-content: end;
-  padding: 1rem 6rem;
-  font-weight: 700;
-  color: #002554;
-  font-size: 1rem;
 }
-.navContainer__links:hover {
+@media screen and (max-width: 1100px) {
+  .navContainer__containerLinks {
+    justify-content: center;
+    padding: 1rem 3rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .navContainer__containerLinks {
+    flex-direction: column;
+    width: 100%;
+    background-color: #002554;
+    color: White;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    padding: 0 1rem;
+    transition: max-height 0.25s ease, opacity 0.25s ease, transform 0.25s ease, padding 0.25s ease;
+  }
+}
+.navContainer__containerLinks__links:hover {
   color: #ED7F2F;
   text-decoration: underline;
+}
+.navContainer__btnMenu {
+  display: none;
+  right: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+.navContainer__btnMenu > svg {
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 640px) {
+  .navContainer__btnMenu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navContainer__containerLinks.active {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 3rem 0rem;
+  }
+}
+.mainContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2rem 10rem 7rem;
+}
+@media screen and (max-width: 1200px) {
+  .mainContainer {
+    padding: 1.5rem 7rem 7rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    padding: 1.5rem 7rem 7rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .mainContainer {
+    padding: 1.5rem 4rem 7rem;
+  }
+}
+
+.containerNosotros, .containerProblematicasLocales, .containerMotivacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+@media screen and (max-width: 900px) {
+  .containerNosotros, .containerProblematicasLocales, .containerMotivacion {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.containerNosotros__leftContainer, .containerProblematicasLocales__leftContainer, .containerMotivacion__leftContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.containerNosotros__leftContainer--imgAntecedentes, .containerNosotros__leftContainer--imgProblematicas, .containerNosotros__leftContainer--imgMotivacion, .containerProblematicasLocales__leftContainer--imgAntecedentes, .containerProblematicasLocales__leftContainer--imgProblematicas, .containerProblematicasLocales__leftContainer--imgMotivacion, .containerMotivacion__leftContainer--imgAntecedentes, .containerMotivacion__leftContainer--imgProblematicas, .containerMotivacion__leftContainer--imgMotivacion {
+  width: 20vw;
+  max-width: 260px;
+  min-width: 230px;
+}
+.containerNosotros__rightContainer--twoColumns, .containerProblematicasLocales__rightContainer--twoColumns, .containerMotivacion__rightContainer--twoColumns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  .containerNosotros__rightContainer--twoColumns, .containerProblematicasLocales__rightContainer--twoColumns, .containerMotivacion__rightContainer--twoColumns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.containerNosotros__rightContainer--twoColumns--columns, .containerProblematicasLocales__rightContainer--twoColumns--columns, .containerMotivacion__rightContainer--twoColumns--columns {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.containerNosotros__rightContainer--twoColumns--columns--txtLine, .containerProblematicasLocales__rightContainer--twoColumns--columns--txtLine, .containerMotivacion__rightContainer--twoColumns--columns--txtLine {
+  color: #002554;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 0.4rem;
+}
+.containerNosotros__rightContainer--twoColumns--columns--txtLine:hover, .containerProblematicasLocales__rightContainer--twoColumns--columns--txtLine:hover, .containerMotivacion__rightContainer--twoColumns--columns--txtLine:hover {
+  color: #01ACFC;
+  transition: color ease-in 0.4s;
+  cursor: pointer;
+}
+.containerNosotros__rightContainer--twoColumns--columns--txtLine > svg, .containerProblematicasLocales__rightContainer--twoColumns--columns--txtLine > svg, .containerMotivacion__rightContainer--twoColumns--columns--txtLine > svg {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+.containerNosotros__rightContainer--txtDEscription, .containerProblematicasLocales__rightContainer--txtDEscription, .containerMotivacion__rightContainer--txtDEscription {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.containerFooter {
+  width: 100%;
+  height: auto;
+  background-color: #002554;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin: 0 auto;
+  padding: 5rem 4rem;
+  gap: 3rem;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .containerFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+}
+.containerFooter--imgLocalGobWhite {
+  width: 50vw;
+  max-width: 270px;
+}
+.containerFooter__socialNetwork {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.containerFooter__socialNetwork--links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.containerFooter__socialNetwork--links:hover {
+  color: #01ACFC;
+  transition: color ease-in 0.4s;
+  cursor: pointer;
+}
+.containerFooter--imgCIDEWhite {
+  width: 50vw;
+  max-width: 120px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,17 +10,78 @@
   <header class="headerBanner">
     <div class="headerBanner__topImg">
       <img src="/assetsWeb/images/LogoCideVerde-Mobile.svg" alt="Logo CIDE" class="headerBanner__topImg--img1">
+      <img src="/assetsWeb/images/LogoLOCALGOB.png" alt="Image Espiral" class="headerBanner--img3">
       <img src="/assetsWeb/images/LogoDAP.png" alt="Logo DAP" class="headerBanner__topImg--img2">
     </div>
-    <img src="/assetsWeb/images/LogoLOCALGOB.png" alt="Image Espiral" class="headerBanner--img3">
+    <!-- <img src="/assetsWeb/images/LogoLOCALGOB.png" alt="Image Espiral" class="headerBanner--img3"> -->
     <h1 class="headerBanner__title">Laboratorio de Investigación para el Estudio de los Gobiernos Locales</h1>
   </header>
 
   <nav class="navContainer">
-    <a href="#" class="navContainer__links">NOSOTROS</a>
-    <a href="#" class="navContainer__links">OBJETIVOS</a>
-    <a href="#" class="navContainer__links">QUIÉNES SOMOS</a>
-    <a href="#" class="navContainer__links">PROYECTOS</a>
+    <button class="navContainer__btnMenu" id="btnMenu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></button>
+    <div class="navContainer__containerLinks" id="navMenu">
+      <a href="#" class="navContainer__containerLinks__links">NOSOTROS</a>
+      <a href="#" class="navContainer__containerLinks__links">OBJETIVOS</a>
+      <a href="#" class="navContainer__containerLinks__links">QUIÉNES SOMOS</a>
+      <a href="#" class="navContainer__containerLinks__links">PROYECTOS</a>
+    </div>
   </nav>
+
+  <section class="mainContainer">
+    <!-- Contendor Nosotros -->
+    <div class="containerNosotros">
+      <div class="containerNosotros__leftContainer">
+        <img src="/assetsWeb/images/Antecedentes.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgAntecedentes">
+        <!-- <img src="./assetsWeb/images/EspiralAzul.png" alt="Icon Espiral Blue" class="containerNosotros__leftContainer--imgEspiral">
+        <span class="containerNosotros__leftContainer--txtEspiral">ANTECEDENTES</span> -->
+      </div>
+      <div class="containerNosotros__rightContainer">
+        <p class="containerNosotros__rightContainer--txtDEscription">Por mas de 40 años, el Centro de lnvestigación y Docencia Económicas (CIDE) y la División de Administración Pública (DAP) han hecho contribuciones sustantivas para comprender la dinámica institucional, política, fiscal y organizacional de los gobiernos subnacionales de México. <br><br> El estudio de los gobiernos locales ha sido uno de los pilares del trabajo academico desarrollado en la DAP a lo largo de su historia.</p>
+      </div>
+    </div>
+    <!-- Contendor Problemáticas Locales -->
+    <div class="containerProblematicasLocales">
+      <div class="containerNosotros__leftContainer">
+        <img src="/assetsWeb/images/Problematicas.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgProblematicas">
+        <!-- <img src="./assetsWeb/images/EspiralAzul.png" alt="Icon Espiral Blue" class="containerNosotros__leftContainer--imgEspiral">
+        <span class="containerNosotros__leftContainer--txtEspiral">ANTECEDENTES</span> -->
+      </div>
+      <div class="containerNosotros__rightContainer--twoColumns">
+        <div class="containerNosotros__rightContainer--twoColumns--columns">
+          <span class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>FRAGMENTACIÓN TERRITORIAL</span>
+          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>DEBILIDAD ADMINISTRATIVA</p>
+          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>DISPARIDAD EN CAPACIDADES INSTITUCIONALES</p>
+        </div>
+        <div class="containerNosotros__rightContainer--twoColumns--columns">
+          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>PRECARIEDAD LABORAL</p>
+          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>CRISIS DE REPRESENTACIÓN POLÍTICA</p>
+          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>PRESIONES POR LA PROVISIÓN DE SERVICIOS EN <br> CONTEXTOS DE VIOLENCIA, DESIGUALDAD Y POLARIZACIÓN</p>
+        </div>
+      </div>
+    </div>
+    <!-- Contendor Motivación -->
+    <div class="containerMotivacion">
+      <div class="containerNosotros__leftContainer">
+        <img src="/assetsWeb/images/Motivacion.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgMotivacion">
+      </div>
+      <div class="containerNosotros__rightContainer">
+        <p class="containerNosotros__rightContainer--txtDEscription">La creación de un laboratorio especializado permitirá al CIDE y la DAP recuperar su liderazgo en esta área, fortalecer la formación académica de su comunidad estudiantil y ofrecer insumos útiles para los gobiernos estatales y municipales, así como organizaciones de la sociedad civil interesadas en mejorar la calidad del gobierno más próximo a la ciudadanía</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="containerFooter">
+    <img src="/assetsWeb/images/LogoLOCALGOB_Bco.png" alt="Logo LOCALGOB White" class="containerFooter--imgLocalGobWhite">
+    <div class="containerFooter__socialNetwork">
+      <a href="#" class="containerFooter__socialNetwork--links"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m13.081 10.712l-4.786-6.71a.6.6 0 0 0-.489-.252H5.28a.6.6 0 0 0-.488.948l6.127 8.59m2.162-2.576l6.127 8.59a.6.6 0 0 1-.488.948h-2.526a.6.6 0 0 1-.489-.252l-4.786-6.71m2.162-2.576l5.842-6.962m-8.004 9.538L5.077 20.25"/></svg> @Local_Gob</a>
+      <a href="#" class="containerFooter__socialNetwork--links"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="m16.484 11.976l6.151-5.344v10.627zm-7.926.905l2.16 1.875c.339.288.781.462 1.264.462h.017h-.001h.014c.484 0 .926-.175 1.269-.465l-.003.002l2.16-1.875l6.566 5.639H1.995zM1.986 5.365h20.03l-9.621 8.356a.6.6 0 0 1-.38.132h-.014h.001h-.014a.6.6 0 0 1-.381-.133l.001.001zm-.621 1.266l6.15 5.344l-6.15 5.28zm21.6-2.441c-.24-.12-.522-.19-.821-.19H1.859a1.9 1.9 0 0 0-.835.197l.011-.005A1.86 1.86 0 0 0 0 5.855v12.172a1.86 1.86 0 0 0 1.858 1.858h20.283a1.86 1.86 0 0 0 1.858-1.858V5.855c0-.727-.419-1.357-1.029-1.66l-.011-.005z"/></svg> local.gob@cide.edu</a>
+      <a href="#" class="containerFooter__socialNetwork--links"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2M8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12m12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z"/></svg> Local Gob</a>
+    </div>
+    <img src="/assetsWeb/images/LogoCideWhite-Mobile.svg" alt="Logo CIDE White" class="containerFooter--imgCIDEWhite">
+  </footer>
+
+  <script src="/index.js"></script>
+
 </body>
 </html>

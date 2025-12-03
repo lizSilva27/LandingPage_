@@ -1,0 +1,109 @@
+@use 'variables' as *;
+
+.mainContainer {
+  // border: 2px solid red;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2rem 10rem 7rem;
+
+  @media screen and (max-width: 1200px) {
+    padding: 1.5rem 7rem 7rem;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 1.5rem 7rem 7rem;
+    // gap: 6rem;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 1.5rem 4rem 7rem;
+    // gap: 7rem;
+  }
+}
+
+.containerNosotros, .containerProblematicasLocales, .containerMotivacion {
+  // border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__leftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &--imgAntecedentes, &--imgProblematicas, &--imgMotivacion {
+      width: 20vw;
+      max-width: 260px;
+      min-width: 230px;
+    }
+  }
+
+  &__rightContainer {
+
+    &--twoColumns {
+      // border: 2px solid red;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      
+      @media screen and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &--columns {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        &--txtLine {
+          // border: 2px solid red;
+          color: $BlueDark;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          gap: 0.4rem;
+
+          &:hover {
+            color: $BlueCyan;
+            transition: color ease-in 0.4s;
+            cursor: pointer;
+          }
+
+          &>svg {
+            text-align: center;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    &--txtDEscription {
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+  }
+}

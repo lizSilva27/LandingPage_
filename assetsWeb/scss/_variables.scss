@@ -139,6 +139,12 @@
   font-weight: 900;
 }
 
+@font-face {
+  font-family: 'Impact';
+  src: url('../fonts/Impact/Impact.ttf') format('truetype');
+  font-weight: 900;
+}
+
 //Colores
 $Black: rgb(0, 0, 0);
 $greenCIDE: #163d34;
@@ -151,3 +157,4 @@ $Orange: #ED7F2F;
 $FontPrimary: 'NotoSansMain', 'MontserratSecondary', 'OpenSansSecondary2', 'Sans Serif Collection';
 $FontPatriaBold: 'PatriaBold';
 $FontPatriaRegular: 'PatriaRegular';
+$FontImpact: 'Impact'
