@@ -20,54 +20,100 @@
   <nav class="navContainer">
     <button class="navContainer__btnMenu" id="btnMenu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></button>
     <div class="navContainer__containerLinks" id="navMenu">
-      <a href="#" class="navContainer__containerLinks__links">NOSOTROS</a>
-      <a href="#" class="navContainer__containerLinks__links">OBJETIVOS</a>
-      <a href="#" class="navContainer__containerLinks__links">QUIÉNES SOMOS</a>
-      <a href="#" class="navContainer__containerLinks__links">PROYECTOS</a>
+      <a href="#" class="navContainer__containerLinks__links" data-target="nosotros">NOSOTROS</a>
+      <a href="#" class="navContainer__containerLinks__links" data-target="objetivos">OBJETIVOS</a>
+      <a href="#" class="navContainer__containerLinks__links" data-target="quienesSomos">QUIÉNES SOMOS</a>
+      <a href="#" class="navContainer__containerLinks__links" data-target="proyectos">PROYECTOS</a>
     </div>
   </nav>
 
   <section class="mainContainer">
     <!-- Contendor Nosotros -->
-    <div class="containerNosotros">
-      <div class="containerNosotros__leftContainer">
-        <img src="/assetsWeb/images/Antecedentes.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgAntecedentes">
-        <!-- <img src="./assetsWeb/images/EspiralAzul.png" alt="Icon Espiral Blue" class="containerNosotros__leftContainer--imgEspiral">
-        <span class="containerNosotros__leftContainer--txtEspiral">ANTECEDENTES</span> -->
-      </div>
-      <div class="containerNosotros__rightContainer">
-        <p class="containerNosotros__rightContainer--txtDEscription">Por mas de 40 años, el Centro de lnvestigación y Docencia Económicas (CIDE) y la División de Administración Pública (DAP) han hecho contribuciones sustantivas para comprender la dinámica institucional, política, fiscal y organizacional de los gobiernos subnacionales de México. <br><br> El estudio de los gobiernos locales ha sido uno de los pilares del trabajo academico desarrollado en la DAP a lo largo de su historia.</p>
-      </div>
-    </div>
-    <!-- Contendor Problemáticas Locales -->
-    <div class="containerProblematicasLocales">
-      <div class="containerNosotros__leftContainer">
-        <img src="/assetsWeb/images/Problematicas.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgProblematicas">
-        <!-- <img src="./assetsWeb/images/EspiralAzul.png" alt="Icon Espiral Blue" class="containerNosotros__leftContainer--imgEspiral">
-        <span class="containerNosotros__leftContainer--txtEspiral">ANTECEDENTES</span> -->
-      </div>
-      <div class="containerNosotros__rightContainer--twoColumns">
-        <div class="containerNosotros__rightContainer--twoColumns--columns">
-          <span class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>FRAGMENTACIÓN TERRITORIAL</span>
-          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>DEBILIDAD ADMINISTRATIVA</p>
-          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>DISPARIDAD EN CAPACIDADES INSTITUCIONALES</p>
+    <section class="dynamicContainer" data-section="nosotros">
+      <div class="containerNosotros">
+        <div class="containerNosotros__leftContainer">
+          <img src="/assetsWeb/images/Antecedentes.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgAntecedentes">
+          <!-- <img src="./assetsWeb/images/EspiralAzul.png" alt="Icon Espiral Blue" class="containerNosotros__leftContainer--imgEspiral">
+          <span class="containerNosotros__leftContainer--txtEspiral">ANTECEDENTES</span> -->
         </div>
-        <div class="containerNosotros__rightContainer--twoColumns--columns">
-          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>PRECARIEDAD LABORAL</p>
-          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>CRISIS DE REPRESENTACIÓN POLÍTICA</p>
-          <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>PRESIONES POR LA PROVISIÓN DE SERVICIOS EN <br> CONTEXTOS DE VIOLENCIA, DESIGUALDAD Y POLARIZACIÓN</p>
+        <div class="containerNosotros__rightContainer">
+          <p class="containerNosotros__rightContainer--txtDEscription">Por mas de 40 años, el Centro de lnvestigación y Docencia Económicas (CIDE) y la División de Administración Pública (DAP) han hecho contribuciones sustantivas para comprender la dinámica institucional, política, fiscal y organizacional de los gobiernos subnacionales de México. <br><br> El estudio de los gobiernos locales ha sido uno de los pilares del trabajo academico desarrollado en la DAP a lo largo de su historia.</p>
         </div>
       </div>
-    </div>
-    <!-- Contendor Motivación -->
-    <div class="containerMotivacion">
-      <div class="containerNosotros__leftContainer">
-        <img src="/assetsWeb/images/Motivacion.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgMotivacion">
+      <!-- Contendor Problemáticas Locales -->
+      <div class="containerProblematicasLocales">
+        <div class="containerNosotros__leftContainer">
+          <img src="/assetsWeb/images/Problematicas.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgProblematicas">
+          <!-- <img src="./assetsWeb/images/EspiralAzul.png" alt="Icon Espiral Blue" class="containerNosotros__leftContainer--imgEspiral">
+          <span class="containerNosotros__leftContainer--txtEspiral">ANTECEDENTES</span> -->
+        </div>
+        <div class="containerNosotros__rightContainer--twoColumns">
+          <div class="containerNosotros__rightContainer--twoColumns--columns">
+            <span class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>FRAGMENTACIÓN TERRITORIAL</span>
+            <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>DEBILIDAD ADMINISTRATIVA</p>
+            <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>DISPARIDAD EN CAPACIDADES INSTITUCIONALES</p>
+          </div>
+          <div class="containerNosotros__rightContainer--twoColumns--columns">
+            <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>PRECARIEDAD LABORAL</p>
+            <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>CRISIS DE REPRESENTACIÓN POLÍTICA</p>
+            <p class="containerNosotros__rightContainer--twoColumns--columns--txtLine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m10 17l5-5m0 0l-5-5"/></svg>PRESIONES POR LA PROVISIÓN DE SERVICIOS EN <br> CONTEXTOS DE VIOLENCIA, DESIGUALDAD Y POLARIZACIÓN</p>
+          </div>
+        </div>
       </div>
-      <div class="containerNosotros__rightContainer">
-        <p class="containerNosotros__rightContainer--txtDEscription">La creación de un laboratorio especializado permitirá al CIDE y la DAP recuperar su liderazgo en esta área, fortalecer la formación académica de su comunidad estudiantil y ofrecer insumos útiles para los gobiernos estatales y municipales, así como organizaciones de la sociedad civil interesadas en mejorar la calidad del gobierno más próximo a la ciudadanía</p>
+      <!-- Contendor Motivación -->
+      <div class="containerMotivacion">
+        <div class="containerNosotros__leftContainer">
+          <img src="/assetsWeb/images/Motivacion.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgMotivacion">
+        </div>
+        <div class="containerNosotros__rightContainer">
+          <p class="containerNosotros__rightContainer--txtDEscription">La creación de un laboratorio especializado permitirá al CIDE y la DAP recuperar su liderazgo en esta área, fortalecer la formación académica de su comunidad estudiantil y ofrecer insumos útiles para los gobiernos estatales y municipales, así como organizaciones de la sociedad civil interesadas en mejorar la calidad del gobierno más próximo a la ciudadanía</p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="dynamicContainer active" data-section="objetivos">
+      <div class="containerObjetivos">
+        <h1 class="containerObjetivos__title">objetivo general</h1>
+        <p class="containerObjetivos__description"> El objetivo general del Local Gob es abrir un espacio académico permanente para el estudio de los gobiernos locales en México, que permita: </p>
+        <div class="containerObjetivos">
+          <div class="containerObjetivos__content">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerObjetivos__content--img">
+            <span class="containerObjetivos__content--description">Generar conocimiento riguroso sobre este ámbito de gobierno.</span>
+          </div>
+          <div class="containerObjetivos__content">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerObjetivos__content--img">
+            <span class="containerObjetivos__content--description">Recopilar y sistematizar información estadística relevante sobre los gobiernos subnacionales.</span>
+          </div>
+          <div class="containerObjetivos__content">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerObjetivos__content--img">
+            <span class="containerObjetivos__content--description">Apoyar la formulación de políticas basadas en evidencia, así como la mejora de la gestión y los servicios públicos locales, a través de proyectos de vinculación.</span>
+          </div>
+          <div class="containerObjetivos__content">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerObjetivos__content--img">
+            <span class="containerObjetivos__content--description">Contribuir a la formación de especialistas en gobiernos locales.</span>
+          </div>
+        </div>
+      </div>
+      <div class="containerEstructuraLab">
+        <div class="containerEstructuraLab__top">
+          <p class="containerEstructuraLab__top--title">ESTRUCTURA DEL LABORATORIO</p>
+          <p class="containerEstructuraLab__top--description">Local GOB está organizado en torno a <br> TRES componentes estratégicos</p>
+        </div>
+        <div class="containerEstructuraLab__containerCircles">
+          <span class="containerEstructuraLab__containerCircles__circle">INVESTIGACIÓN BÁSICA</span>
+          <span class="containerEstructuraLab__containerCircles__circle">PLATAFORMA DE DATOS</span>
+          <span class="containerEstructuraLab__containerCircles__circle">FORMACIÓN Y VINCULACIÓN</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="dynamicContainer" data-section="quienesSomos">
+      <p>Quienes somos</p>
+    </section>
+
+    <section class="dynamicContainer" data-section="proyectos">
+      <p>Proyectos</p>
+    </section>
   </section>
   
   <!-- Footer -->

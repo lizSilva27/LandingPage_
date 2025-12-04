@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixin' as *;
 
 .mainContainer {
   // border: 2px solid red;
@@ -9,28 +10,46 @@
   align-items: center;
   justify-content: center;
   gap: 10rem;
-  padding: 2rem 10rem 7rem;
+  // padding: 2rem 10rem 7rem;
 
-  @media screen and (max-width: 1200px) {
-    padding: 1.5rem 7rem 7rem;
-  }
-  @media screen and (max-width: 900px) {
-    padding: 1.5rem 7rem 7rem;
-    // gap: 6rem;
-  }
-  @media screen and (max-width: 640px) {
-    padding: 1.5rem 4rem 7rem;
-    // gap: 7rem;
-  }
+  // @media screen and (max-width: 1200px) {
+  //   padding: 1.5rem 7rem 7rem;
+  // }
+  // @media screen and (max-width: 900px) {
+  //   padding: 1.5rem 7rem 7rem;
+  //   // gap: 6rem;
+  // }
+  // @media screen and (max-width: 640px) {
+  //   padding: 1.5rem 4rem 7rem;
+  //   // gap: 7rem;
+  // }
 }
 
 .containerNosotros, .containerProblematicasLocales, .containerMotivacion {
   // border: 2px solid blue;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 4rem;
+
+  @include paddingContainers();
+  // padding: 4rem 1rem 0rem;
+
+  // &:last-child {
+  //   padding-bottom: 7rem;
+  // }
+  
+  // @media screen and (min-width: 800px) {
+  //   padding: 4rem 2rem 7rem;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   padding: 6rem 4rem 7rem;
+  // }
+  // @media screen and (min-width: 1500px) {
+  //   padding: 4rem 7rem 7rem;
+  // }
   
   @media screen and (max-width: 900px) {
     display: flex;
@@ -53,6 +72,7 @@
 
     &--twoColumns {
       // border: 2px solid red;
+      width: 100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       flex-wrap: wrap;

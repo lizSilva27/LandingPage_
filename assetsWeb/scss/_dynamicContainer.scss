@@ -1,0 +1,17 @@
+.dynamicContainer {
+  // border: 2px solid red;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  // padding: 5rem 1rem 7rem;
+
+  &.active {
+    width: 100%;
+    display: flex;
+    opacity: 1;
+  }
+}

@@ -1,5 +1,8 @@
 @use 'reset';
 @use 'bgBanner';
 @use 'navigation';
-@use '_mainContainer';
-@use '_footer';
+@use 'mainContainer';
+@use 'footer';
+@use 'dynamicContainer';
+@use 'containerObjetivos';
+@use 'mixin';
