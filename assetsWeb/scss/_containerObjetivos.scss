@@ -48,7 +48,7 @@
 }
 
 .containerEstructuraLab {
-  // border: 2px solid red;
+  position: relative;
   width: 100%;
   background: #01acfc;
   min-height: 500px;
@@ -62,6 +62,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  &__imgBG {
+    position: absolute;
+    width: 25vw;
+    min-width: 260px;
+    max-width: 70%;
+    opacity: 0.2;
+    left: 20px;
+    top: 20px;
+
+    // @media screen and (min-width: 540px) {
+    //   width: 30%;
+    // }
+  }
 
   &__top {
     width: 100%;
@@ -117,29 +131,6 @@
       }
     }
   }
-
-  // &__containerCircles {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  //   gap: 3rem;
-
-  //   &__circle {
-  //     background-color: $BlueDark;
-  //     color: $White;
-  //     border-radius: 50%;
-  //     width: 190px;
-  //     height: 190px;
-  //     padding: 2rem;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     text-align: center;
-  //     font-weight: 600;
-  //     font-size: 1.1rem;
-  //   }
-  // }
 
   &__containerCircles {
     display: flex;

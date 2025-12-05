@@ -1,7 +1,6 @@
 @use 'variables' as *;
 
 .navContainer {
-  // border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -86,4 +85,8 @@
     transform: translateY(0);
     padding: 3rem 0rem;
   }
+}
+
+.navContainer__containerLinks__links.active {
+  color: $Orange;
 }
