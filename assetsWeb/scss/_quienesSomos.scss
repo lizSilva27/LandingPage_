@@ -2,7 +2,7 @@
 @use 'mixin' as *;
 
 .containerResponsables {
-  // border: 2px solid red;
+  // border: 2px solid orange;
   position: relative;
   width: 100%;
   display: flex;
@@ -15,7 +15,6 @@
   &__title {
     margin-bottom: 1.5rem;
     color: $BlueDark;
-    // font-size: 1rem;
     font-family: $FontImpact;
 
     @media screen and (max-width: 1200px) {
@@ -59,41 +58,9 @@
       max-width: 340px;
 
       &__cicrcles {
-        width: 280px;
-        height: 280px;
-        position: relative;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-
-        @media screen and (min-width: 1100px) {
-          width: 300px;
-          height: 300px;
-        }
-        @media screen and (min-width: 1400px) {
-          width: 340px;
-          height: 340px;
-        }
         
-        &::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          border-radius: 50%;
-          transform: rotate(-90deg);
-          background: conic-gradient(#002554 0deg 180deg, #01ACFC 180deg 360deg);
-          transform: rotate(-90deg);
-          transition: transform 0.6s ease;
-          z-index: 1;
-        }
-
-        &:hover::before {
-          transform: rotate(90deg);
-        }
-
+        @include circlesPeoples($borderTop: $BlueDark, $borderBottom: $BlueCyan);
+        
         &--img {
           width: 100%;
           height: 100%;
@@ -123,55 +90,220 @@
 }
 
 .containerAliadosInternos {
-  border: 2px solid red;
+  // border: 2px solid red;
   width: 100%;
   height: auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  &__imgBG {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    opacity: 0.2;
+  &__title {
+    margin-bottom: 1.5rem;
+    color: $BlueDark;
+    font-family: $FontImpact;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 1.5rem;
+    }
   }
-
+  
   &__fourColumns {
-    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    transition: transform 0.3s;
+    
     @include paddingContainers();
     
     &__circles {
-      // border: 2px solid blue;
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: 50%;
-        transform: rotate(-90deg);
-        background: conic-gradient(
-          #01ACFC 0deg 180deg,
-          transparent 180deg 360deg
-    );
-
-    z-index: 1; /* borde encima de la imagen */
-      }
+      
+      @include circlesPeoples($borderTop: $BlueCyan, $borderBottom: transparent);
 
       &--img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
+        z-index: 2;
+        padding: 12px;
+        border-radius: 50%;
         position: relative;
-        z-index: 1;
       }
     }
+  }
+  
+  &__controls {
+    margin-top:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    z-index: 10;
+
+    
+    &--btn {
+      background: none;
+      border: none;
+      outline: none;
+      color: $BlueDark;
+      cursor:pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      
+      &:hover{
+        transform:scale(1.1);
+      }
+
+      &>svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    
+    &--dots {
+      display:flex;
+      gap: 0.5rem;
+      // z-index: 10;
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius:50%;
+        border: 1px solid $BlueDark;
+        outline: none;
+        cursor:pointer;
+        transition: 0.3s;
+
+        &.active {
+          border: none;
+          background:$BlueCyan;
+          transform:scale(1.2);
+        }
+      }
+    }
+  }
+
+  &__autoplayBar {
+    width: 77%;
+    height: 5px;
+    background: #d8d8d8;
+    margin-top: 1.5rem;
+    position: relative;
+    overflow: hidden;
+
+    &::after{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      background:$BlueCyan;
+      transform:translateX(-100%);
+    }
+
+    &.run::after{
+      animation: autoplayBar 5s linear forwards;
+    }
+  }
+
+  &__imgBG {
+    border: 2px solid blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.2;
+  }
+}
+
+@keyframes autoplayBar {
+  from{transform:translateX(-100%);}
+  to{transform:translateX(0);}
+}
+
+.slide-right{
+  animation: slideRight .4s ease forwards;
+}
+.slide-left{
+  animation: slideLeft .4s ease forwards;
+}
+
+@keyframes slideRight{
+  from{opacity:0; transform:translateX(30px);}
+  to{opacity:1; transform:translateX(0);}
+}
+@keyframes slideLeft{
+  from{opacity:0; transform:translateX(-30px);}
+  to{opacity:1; transform:translateX(0);}
+}
+
+.containerAdescription {
+  // border: 2px solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.93rem;
+
+  &__line {
+    width: 100%;
+    // border: 2px solid red;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 750px;
+    padding-left: 1rem;
+    margin: 0 auto;
+
+    &--imgEspiral {
+      opacity: 0.3;
+      width: 20vw;
+      max-width: 45px;
+      min-width: 35px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    &--description {
+      font-weight: 700;
+      color: $BlueDark;
+      font-size: 0.93rem;
+
+      @media screen and (min-width: 900px) {
+        font-size: 1rem;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.containerAliadosExternos {
+  border: 2px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+
+  &__title {
+    color: $Orange;
+    font-size: 2rem;
+    font-family: $FontImpact;
+  }
+
+  &__containerTxt {
+    border: 2px solid red;
+    background-color: $BlueDark;
+    color: white;
+    padding: 2rem 4rem;
   }
 }
