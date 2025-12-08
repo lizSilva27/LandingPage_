@@ -20,10 +20,10 @@
   <nav class="navContainer">
     <button class="navContainer__btnMenu" id="btnMenu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></button>
     <div class="navContainer__containerLinks" id="navMenu">
-      <a href="#" class="navContainer__containerLinks__links" data-target="nosotros">NOSOTROS</a>
-      <a href="#" class="navContainer__containerLinks__links" data-target="objetivos">OBJETIVOS</a>
-      <a href="#" class="navContainer__containerLinks__links" data-target="quienesSomos">QUIÉNES SOMOS</a>
-      <a href="#" class="navContainer__containerLinks__links" data-target="proyectos">PROYECTOS</a>
+      <button class="navContainer__containerLinks__links" data-target="nosotros">NOSOTROS</button>
+      <button class="navContainer__containerLinks__links" data-target="objetivos">OBJETIVOS</button>
+      <button class="navContainer__containerLinks__links" data-target="quienesSomos">QUIÉNES SOMOS</button>
+      <button class="navContainer__containerLinks__links" data-target="proyectos">PROYECTOS</button>
     </div>
   </nav>
 
@@ -70,7 +70,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Contenedor de Objetivos -->
     <section class="dynamicContainer" data-section="objetivos">
       <div class="containerObjetivos">
         <h1 class="containerObjetivos__title">objetivo general</h1>
@@ -107,15 +107,13 @@
         </div>
       </div>
     </section>
-
+    <!-- Contenedor de Responsables -->
     <section class="dynamicContainer active" data-section="quienesSomos">
       <div class="containerResponsables">
-        
         <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerResponsables__imgBG">
-        <h2 class="containerResponsables__title">RESPONSABLES</h2>
-
+        <h1 class="containerResponsables__title">RESPONSABLES</h1>
         <div class="containerResponsables__threeColumns">
-
+          <!-- Dr. Manlio Felipe Castillo Salas -->
           <div class="containerResponsables__threeColumns__circlesContainer">
             <div class="containerResponsables__threeColumns__circlesContainer__cicrcles">
               <img src="/assetsWeb/images/Responsables/Manlio.png" alt="Image Dr. Manlio Felipe Castillo Salas" class="containerResponsables__threeColumns__circlesContainer__cicrcles--img">
@@ -123,7 +121,7 @@
             <h4 class="containerResponsables__threeColumns__circlesContainer--name">Dr. Manlio Felipe Castillo Salas</h4>
             <p class="containerResponsables__threeColumns__circlesContainer--description">Coordinador General y Responsable de Investigación Básica</p>
           </div>
-
+          <!-- Dr. Ricardo Massa Roldán -->
           <div class="containerResponsables__threeColumns__circlesContainer">
             <div class="containerResponsables__threeColumns__circlesContainer__cicrcles">
               <img src="/assetsWeb/images/Responsables/Ricardo.png" alt="Image Ricardo Massa Roldán" class="containerResponsables__threeColumns__circlesContainer__cicrcles--img">
@@ -131,7 +129,7 @@
             <h4 class="containerResponsables__threeColumns__circlesContainer--name">Dr. Ricardo Massa Roldán</h4>
             <p class="containerResponsables__threeColumns__circlesContainer--description">Responsable de la Plataforma de Datos</p>
           </div>
-
+          <!-- Dr. Pavel Goméz Granados -->
           <div class="containerResponsables__threeColumns__circlesContainer">
             <div class="containerResponsables__threeColumns__circlesContainer__cicrcles">
               <img src="/assetsWeb/images/Responsables/Pavel.png" alt="Image Dr. Pavel Goméz Granados" class="containerResponsables__threeColumns__circlesContainer__cicrcles--img">
@@ -141,6 +139,15 @@
           </div>
         </div>
 
+      </div>
+      <div class="containerAliadosInternos">
+        <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerAliadosInternos__imgBG">
+        <h1 class="containerAliadosInternos__title">ALIADOS INTERNOS</h1>
+        <div class="containerAliadosInternos__fourColumns">
+          <div class="containerAliadosInternos__fourColumns__circles">
+            <img src="/assetsWeb/images/Responsables/Manlio.png" alt="Image Dr. Manlio Felipe Castillo Salas" class="containerAliadosInternos__fourColumns__circles--img">
+          </div>
+        </div>
       </div>
     </section>
 
