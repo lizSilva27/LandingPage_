@@ -39,7 +39,7 @@
       flex-direction: column;
       width: 100%;
       background-color: $BlueDark;
-      color: White;
+      color: $White;
       max-height: 0;
       overflow: hidden;
       opacity: 0;
@@ -54,6 +54,10 @@
 
     &__links {
       outline: none;
+
+      @media screen and (max-width: 640px) {
+        color: $White;
+      }
     }
 
     &__links:hover {
@@ -70,7 +74,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    color: white;
+    color: $White;
 
     &>svg {
       width: 50px;

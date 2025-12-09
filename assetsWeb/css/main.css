@@ -254,7 +254,7 @@ h6 {
 }
 .headerBanner__title {
   font-size: 1rem;
-  font-family: "PatriaBold";
+  font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
   text-align: center;
   font-size: 1.2rem;
   color: #002554;
@@ -323,7 +323,7 @@ h6 {
     flex-direction: column;
     width: 100%;
     background-color: #002554;
-    color: White;
+    color: #ffffff;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -334,6 +334,11 @@ h6 {
 }
 .navContainer__containerLinks__links {
   outline: none;
+}
+@media screen and (max-width: 640px) {
+  .navContainer__containerLinks__links {
+    color: #ffffff;
+  }
 }
 .navContainer__containerLinks__links:hover {
   color: #ED7F2F;
@@ -347,7 +352,7 @@ h6 {
   border: none;
   outline: none;
   cursor: pointer;
-  color: white;
+  color: #ffffff;
 }
 .navContainer__btnMenu > svg {
   width: 50px;
@@ -506,7 +511,7 @@ h6 {
   align-items: start;
   justify-content: center;
   gap: 3rem;
-  color: white;
+  color: #ffffff;
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -528,7 +533,7 @@ h6 {
 .dynamicContainer {
   display: none;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 2s ease;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -538,6 +543,7 @@ h6 {
   width: 100%;
   display: flex;
   opacity: 1;
+  transition: opacity 2s ease;
 }
 
 .containerObjetivos {
@@ -571,7 +577,8 @@ h6 {
 .containerObjetivos__title {
   font-size: 1.5rem;
   color: #002554;
-  font-family: "Impact";
+  font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 1200px) {
@@ -659,23 +666,24 @@ h6 {
   }
 }
 .containerEstructuraLab__top--title {
-  font-family: "Impact";
+  font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
+  font-weight: 800;
   color: #ffffff;
   font-size: 1.7rem;
 }
 @media screen and (min-width: 800px) {
   .containerEstructuraLab__top--title {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 1100px) {
   .containerEstructuraLab__top--title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 1400px) {
   .containerEstructuraLab__top--title {
-    font-size: 3.3rem;
+    font-size: 3.1rem;
   }
 }
 .containerEstructuraLab__top--description {
@@ -794,7 +802,8 @@ h6 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   color: #002554;
-  font-family: "Impact";
+  font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
   .containerResponsables__title {
@@ -911,7 +920,8 @@ h6 {
 .containerAliadosInternos__title {
   font-size: 1.5rem;
   color: #002554;
-  font-family: "Impact";
+  font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
   .containerAliadosInternos__title {
@@ -1035,27 +1045,6 @@ h6 {
   background: #01ACFC;
   transform: scale(1.2);
 }
-.containerAliadosInternos__autoplayBar {
-  width: 77%;
-  height: 5px;
-  background: #d8d8d8;
-  margin-top: 1.5rem;
-  position: relative;
-  overflow: hidden;
-}
-.containerAliadosInternos__autoplayBar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #01ACFC;
-  transform: translateX(-100%);
-}
-.containerAliadosInternos__autoplayBar.run::after {
-  animation: autoplayBar 5s linear forwards;
-}
 .containerAliadosInternos__imgBG {
   position: absolute;
   right: 0px;
@@ -1065,6 +1054,21 @@ h6 {
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.2;
+}
+.containerAliadosInternos__bgImgNja {
+  position: absolute;
+  bottom: 210px;
+  left: 0;
+  z-index: -2;
+  width: 75vw;
+  max-width: 500px;
+  min-height: 75px;
+}
+@media screen and (min-width: 1100px) {
+  .containerAliadosInternos__bgImgNja {
+    bottom: 385px;
+    left: 175px;
+  }
 }
 
 @keyframes autoplayBar {
@@ -1150,14 +1154,26 @@ h6 {
 .containerAliadosExternos {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 4rem;
-  margin: 0rem 0rem 10rem;
+  margin: 8rem 0rem 10rem;
+  padding: 1rem 0.8rem;
+}
+@media screen and (min-width: 1100px) {
+  .containerAliadosExternos {
+    flex-direction: row;
+    align-items: start;
+    padding: 20rem 0rem 10rem;
+  }
 }
 .containerAliadosExternos__title {
   font-size: 1.5rem;
   color: #ED7F2F;
-  font-family: "Impact";
+  font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
+  text-transform: uppercase;
+  font-weight: 700;
 }
 @media screen and (min-width: 1200px) {
   .containerAliadosExternos__title {
@@ -1166,15 +1182,24 @@ h6 {
 }
 .containerAliadosExternos__containerTxt {
   background-color: #002554;
-  color: white;
-  padding: 2rem 7rem;
+  color: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding: 2rem 0.9rem;
   border-radius: 1.7rem;
-  border: 7px solid #ED7F2F;
+  border: 5px solid #ED7F2F;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   gap: 1.3rem;
+}
+@media screen and (min-width: 1110px) {
+  .containerAliadosExternos__containerTxt {
+    border: 7px solid #ED7F2F;
+    padding: 2rem 7rem;
+  }
 }
 
 .txtBold {
@@ -1227,7 +1252,8 @@ h6 {
 .containerProyectos__title {
   font-size: 1.5rem;
   color: #01ACFC;
-  font-family: "Impact";
+  font-family: "NotoSansMain", "MontserratSecondary", "OpenSansSecondary2", "Sans Serif Collection";
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
   .containerProyectos__title {

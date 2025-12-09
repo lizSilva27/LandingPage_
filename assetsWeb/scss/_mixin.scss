@@ -56,10 +56,11 @@
   }
 }
 
-@mixin titles($fontColor: $BlueDark, $fontFamily: $FontImpact) {
+@mixin titles($fontColor: $BlueDark, $fontFamily: $FontPrimary) {
   font-size: 1.5rem;
   color: $fontColor;
   font-family: $fontFamily;
+  text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
     font-size: 2rem;
