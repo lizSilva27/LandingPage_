@@ -1,0 +1,49 @@
+@use 'mixin' as *;
+@use 'variables' as *;
+
+.containerProyectos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  
+  @include paddingContainers();
+
+  &__title {
+    @include titles($fontColor: $BlueCyan);
+  }
+
+  &__line {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    &--img {
+      @include sizeIconCircle();
+      display: block;
+    }
+
+    &--description {
+      font-size: 1.1rem;
+      color: $BlueDark;
+      font-weight: 700;
+    }
+  }
+}
+
+.containerColumn {
+  display: flex;
+  max-width: 800px;
+  min-width: calc(75% + 120px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0rem 0.7rem;
+}

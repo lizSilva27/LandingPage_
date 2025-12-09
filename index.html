@@ -20,7 +20,7 @@
   <nav class="navContainer">
     <button class="navContainer__btnMenu" id="btnMenu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></button>
     <div class="navContainer__containerLinks" id="navMenu">
-      <button class="navContainer__containerLinks__links" data-target="nosotros">NOSOTROS</button>
+      <button class="navContainer__containerLinks__links active" data-target="nosotros">NOSOTROS</button>
       <button class="navContainer__containerLinks__links" data-target="objetivos">OBJETIVOS</button>
       <button class="navContainer__containerLinks__links" data-target="quienesSomos">QUIÉNES SOMOS</button>
       <button class="navContainer__containerLinks__links" data-target="proyectos">PROYECTOS</button>
@@ -29,7 +29,7 @@
 
   <section class="mainContainer">
     <!-- Contendor Nosotros -->
-    <section class="dynamicContainer" data-section="nosotros">
+    <section class="dynamicContainer active" data-section="nosotros">
       <div class="containerNosotros">
         <div class="containerNosotros__leftContainer">
           <img src="/assetsWeb/images/Antecedentes.png" alt="Icon Antecedentes" class="containerNosotros__leftContainer--imgAntecedentes">
@@ -108,9 +108,9 @@
       </div>
     </section>
     <!-- Contenedor de Responsables -->
-    <section class="dynamicContainer active" data-section="quienesSomos">
+    <section class="dynamicContainer" data-section="quienesSomos">
       <div class="containerResponsables">
-        <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerResponsables__imgBG">
+        <img src="/assetsWeb/images/MedioEspiralCyan.png" alt="Icon Espiral Cyan" class="containerResponsables__imgBG">
         <h1 class="containerResponsables__title">RESPONSABLES</h1>
         <div class="containerResponsables__threeColumns">
           <!-- Dr. Manlio Felipe Castillo Salas -->
@@ -141,7 +141,7 @@
 
       </div>
       <div class="containerAliadosInternos">
-        <!-- <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerAliadosInternos__imgBG"> -->
+        <img src="/assetsWeb/images/MedioEspiralCyan.png" alt="Icon Espiral Cyan" class="containerAliadosInternos__imgBG">
         <h1 class="containerAliadosInternos__title">ALIADOS INTERNOS</h1>
         <div class="containerAliadosInternos__fourColumns">
           <div class="containerAliadosInternos__fourColumns__circles">
@@ -189,25 +189,71 @@
           </button>
         </div>
         <div class="containerAliadosInternos__autoplayBar"></div>
-      </div>
-      <div class="containerAdescription">
-        <div class="containerAdescription__line"><img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerAdescription__line--imgEspiral"><p class="containerAdescription__line--description">DRA. LILIANA GONZÁLEZ VIVEROS</p></div>
-        <div class="containerAdescription__line"><img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerAdescription__line--imgEspiral"><p class="containerAdescription__line--description">DR. VÍCTOR CARREÓN RODRÍGUEZ</p></div>
-        <div class="containerAdescription__line"><img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerAdescription__line--imgEspiral"><p class="containerAdescription__line--description">COORDINACIÓN DE TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIONES</p></div>
-      </div>
-      <div class="containerAliadosExternos">
-        <p class="containerAliadosExternos__title">ALIADOS EXTERNOS</p>
+        <div class="containerAdescription">
+          <div class="containerAdescription__line"><img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerAdescription__line--imgEspiral"><p class="containerAdescription__line--description">DRA. LILIANA GONZÁLEZ VIVEROS</p></div>
+          <div class="containerAdescription__line"><img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerAdescription__line--imgEspiral"><p class="containerAdescription__line--description">DR. VÍCTOR CARREÓN RODRÍGUEZ</p></div>
+          <div class="containerAdescription__line"><img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerAdescription__line--imgEspiral"><p class="containerAdescription__line--description">COORDINACIÓN DE TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIONES</p></div>
+        </div>
+        <div class="containerAliadosExternos">
+          <p class="containerAliadosExternos__title">ALIADOS EXTERNOS</p>
           <div class="containerAliadosExternos__containerTxt">
-            <div class="containerAliadosExternos__containerTxt--nameYdescription"><p>DR. EDGAR E. RAMÍREZ DE LA CRUZ <br>UNIVERSIDAD DE NEVADA, LAS VEGAS</p></div>
-            <div class="containerAliadosExternos__containerTxt--nameYdescription"><p>DR. JERED B. CARR <br>UNIVERSIDAD DE ILLINOIS, CHICAGO, Y CODIRECTOR <br>DEL NETWORKS & GOVERNANCE LA</p></div>
-            <div class="containerAliadosExternos__containerTxt--nameYdescription"><p>DR. RAÚL GUTIÉRREZ MEAVE <br>UNIVERSIDAD DE ILLINOIS, CHICAGO</p></div>
+            <div class="containerAliadosExternos__containerTxt--nameYdescription"><p><span class="txtBold">DR. EDGAR E. RAMÍREZ DE LA CRUZ</span> <br><span class="txtLight">UNIVERSIDAD DE NEVADA, LAS VEGAS</span></p></div>
+            <div class="containerAliadosExternos__containerTxt--nameYdescription"><p><span class="txtBold">DR. JERED B. CARR</span> <br><span class="txtLight">UNIVERSIDAD DE ILLINOIS, CHICAGO, Y CODIRECTOR<br>DEL NETWORKS & GOVERNANCE LA</span></p></div>
+            <div class="containerAliadosExternos__containerTxt--nameYdescription"><p><span class="txtBold">DR. RAÚL GUTIÉRREZ MEAVE</span> <br><span class="txtLight">UNIVERSIDAD DE ILLINOIS, CHICAGO</span></p></div>
           </div>
+        </div>
       </div>
       <!-- <img src="/assetsWeb/images/EspiralAzul.png" alt="Icon Espiral Orange"> -->
     </section>
 
     <section class="dynamicContainer" data-section="proyectos">
-      <p>Proyectos</p>
+      <div class="containerProyectos">
+        <div class="containerColumn">
+          <h1 class="containerProyectos__title">INVESTIGACIÓN BÁSICA</h1>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">CÁLCULO DE COLABORACIÓN <br><span class="rightStep">THE NETWORKS AND GOVERNANCE LAB (NGL)</span></p>
+          </div>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">REPRESENTACIÓN BUROCRÁTICA DE GÉNERO EN LOS GOBIERNOS LOCALES</p>
+          </div>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">ÍNDICE MUNICIPAL DE VIOLENCIA DOMÉSTICA Y FAMILIAR</p>
+          </div>
+        </div>
+        <div class="containerColumn">
+          <h1 class="containerProyectos__title">PLATAFORMA DE DATOS</h1>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">LABORATORIO DE MICRODATOS DEL INEGI</p>
+          </div>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">REPOSITORIO DE BASE DE DATOS</p>
+          </div>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">APOYO A LA COMUNIDAD CIDE PARA EL TRATAMIENTO DE BASE DE DATOS</p>
+          </div>
+        </div>
+        <div class="containerColumn">
+          <h1 class="containerProyectos__title">FORMACIÓN Y VINCULACIÓN</h1>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">ESCUELA DE MÉTODOS <br><span class="rightStep">DIPLOMADO, TALLER PARA POSGRADO</span></p>
+          </div>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">SEMINARIO DAP</p>
+          </div>
+          <div class="containerProyectos__line">
+            <img src="/assetsWeb/images/EspiralCyan.png" alt="Icon Espiral Cyan" class="containerProyectos__line--img">
+            <p class="containerProyectos__line--description">CAPACITACIÓN EN CIENCIA DE DATOS</p>
+          </div>
+        </div>
+      </div>
     </section>
   </section>
   

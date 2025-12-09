@@ -55,3 +55,33 @@
     transform: rotate(90deg);
   }
 }
+
+@mixin titles($fontColor: $BlueDark, $fontFamily: $FontImpact) {
+  font-size: 1.5rem;
+  color: $fontColor;
+  font-family: $fontFamily;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+@mixin sizeIconCircle() {
+  width: 10vw;
+  max-width: 80px;
+  min-width: 50px;
+  flex-shrink: 0;
+  transition: transform 2s ease;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
+
+  &:not(:hover) {
+    transform: rotate(-360deg);
+  }
+
+  // &:hover {
+  //   animation: spin 1.5s linear infinite;
+  // }
+}

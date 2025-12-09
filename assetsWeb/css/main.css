@@ -569,13 +569,14 @@ h6 {
   }
 }
 .containerObjetivos__title {
-  font-family: "Impact";
+  font-size: 1.5rem;
   color: #002554;
+  font-family: "Impact";
   margin-bottom: 1rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .containerObjetivos__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .containerObjetivos__description {
@@ -599,6 +600,14 @@ h6 {
   width: 10vw;
   max-width: 80px;
   min-width: 50px;
+  flex-shrink: 0;
+  transition: transform 2s ease;
+}
+.containerObjetivos__content--img:hover {
+  transform: rotate(180deg);
+}
+.containerObjetivos__content--img:not(:hover) {
+  transform: rotate(-360deg);
 }
 
 .containerEstructuraLab {
@@ -783,22 +792,24 @@ h6 {
 }
 .containerResponsables__title {
   margin-bottom: 1.5rem;
+  font-size: 1.5rem;
   color: #002554;
   font-family: "Impact";
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .containerResponsables__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .containerResponsables__imgBG {
+  rotate: 180deg;
   position: absolute;
-  top: 20px;
-  left: 10px;
+  top: 15%;
+  left: 0px;
   opacity: 0.2;
   width: 50vw;
-  max-width: 440px;
-  min-width: 250px;
+  max-width: 300px;
+  min-width: 210px;
 }
 @media screen and (min-width: 768px) {
   .containerResponsables__imgBG {
@@ -890,19 +901,21 @@ h6 {
   width: 100%;
   height: auto;
   position: relative;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 3rem;
 }
 .containerAliadosInternos__title {
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
   color: #002554;
   font-family: "Impact";
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .containerAliadosInternos__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .containerAliadosInternos__fourColumns {
@@ -1044,10 +1057,13 @@ h6 {
   animation: autoplayBar 5s linear forwards;
 }
 .containerAliadosInternos__imgBG {
-  border: 2px solid blue;
   position: absolute;
-  top: 0;
-  right: 0;
+  right: 0px;
+  width: 50vw;
+  max-width: 300px;
+  min-width: 150px;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0.2;
 }
 
@@ -1094,6 +1110,7 @@ h6 {
   align-items: center;
   gap: 1rem;
   padding: 0.93rem;
+  margin: 8rem 0rem;
 }
 .containerAdescription__line {
   width: 100%;
@@ -1131,22 +1148,130 @@ h6 {
 }
 
 .containerAliadosExternos {
-  border: 2px solid red;
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 4rem;
+  margin: 0rem 0rem 10rem;
 }
 .containerAliadosExternos__title {
+  font-size: 1.5rem;
   color: #ED7F2F;
-  font-size: 2rem;
   font-family: "Impact";
 }
+@media screen and (min-width: 1200px) {
+  .containerAliadosExternos__title {
+    font-size: 2rem;
+  }
+}
 .containerAliadosExternos__containerTxt {
-  border: 2px solid red;
   background-color: #002554;
   color: white;
-  padding: 2rem 4rem;
+  padding: 2rem 7rem;
+  border-radius: 1.7rem;
+  border: 7px solid #ED7F2F;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.txtBold {
+  font-weight: 700;
+  font-size: 0.97rem;
+}
+@media screen and (min-width: 900px) {
+  .txtBold {
+    font-size: 1.1rem;
+  }
+}
+
+.txtLight {
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 900px) {
+  .rightStep {
+    margin-left: 3rem;
+  }
+}
+
+.containerProyectos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  padding: 4rem 1rem 0rem;
+}
+.containerProyectos:last-child {
+  padding-bottom: 10rem;
+}
+@media screen and (min-width: 800px) {
+  .containerProyectos {
+    padding: 4rem 2rem 0rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .containerProyectos {
+    padding: 6rem 4rem 0rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .containerProyectos {
+    padding: 4rem 7rem 0rem;
+  }
+}
+.containerProyectos__title {
+  font-size: 1.5rem;
+  color: #01ACFC;
+  font-family: "Impact";
+}
+@media screen and (min-width: 1200px) {
+  .containerProyectos__title {
+    font-size: 2rem;
+  }
+}
+.containerProyectos__line {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.containerProyectos__line--img {
+  width: 10vw;
+  max-width: 80px;
+  min-width: 50px;
+  flex-shrink: 0;
+  transition: transform 2s ease;
+  display: block;
+}
+.containerProyectos__line--img:hover {
+  transform: rotate(180deg);
+}
+.containerProyectos__line--img:not(:hover) {
+  transform: rotate(-360deg);
+}
+.containerProyectos__line--description {
+  font-size: 1.1rem;
+  color: #002554;
+  font-weight: 700;
+}
+
+.containerColumn {
+  display: flex;
+  max-width: 800px;
+  min-width: calc(75% + 120px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0rem 0.7rem;
 }
 
 /*# sourceMappingURL=main.css.map */
